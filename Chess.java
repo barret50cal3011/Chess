@@ -3,7 +3,6 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JList;
 
 import java.awt.Dimension;
 import java.awt.BorderLayout;
@@ -1131,7 +1130,11 @@ class Board
 
 class Box
 {
+	public static final String BLACK = "black";
+	public static final String WHITE = "white";
 	private Piece piece;
+	
+	private String color; 
 
 	private boolean whiteCheck;
 	private boolean blackCheck;
@@ -1170,6 +1173,16 @@ class Box
 		{
 			blackCheck = check;
 		}
+	}
+
+	public String getColor()
+	{
+		return color;
+	}
+
+	public void setColor(String color)
+	{
+		this.color = color;
 	}
 
 }
