@@ -1,0 +1,13 @@
+Bishop.class
+Board.class
+Box.class
+CheckException.class
+Chess.class
+IligalMovementException.class
+King.class
+Knight.class
+MovementException.class
+Pawn.class
+Piece.class
+Queen.class
+Tower.class
