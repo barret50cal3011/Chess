@@ -306,6 +306,14 @@ class Board
 			for(int j = 0; j < board[i].length; j++)
 			{
 				board[i][j] = new Box();
+				int ij = i + j;
+				if((ij % 2) == 0)
+				{
+					board[i][j].setColor(Box.WHITE);
+				}else 
+				{
+					board[i][j].setColor(Box.BLACK);
+				}
 			}
 		}
 
