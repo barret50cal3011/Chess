@@ -1273,7 +1273,6 @@ class Tower extends Piece
 	public boolean isLegalMove(int initialX, int initialY, int finalX, int finalY)
 	{
 		return initialY == finalY || initialX == finalX;
-		//TODO
 	}
 
 	@Override
@@ -1308,7 +1307,6 @@ class Knight extends Piece
 		dy = Math.abs(dy);
 
 		return ((dy == 1 && dx == 2)||(dy == 2 && dx == 1));
-		//TODO
 	}
 
 	@Override public boolean wasMoved(){return true;}
